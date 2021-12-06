@@ -27,7 +27,7 @@ six = do
         contents <- hGetContents handle
 
         let p = parse contents
-        let e = last (take 257 (iterate advanceDay p))
+        let e = iterate advanceDay p!!256
         let sum = Map.foldr (+) 0 e
         print sum
         hClose handle
