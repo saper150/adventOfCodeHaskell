@@ -37,11 +37,14 @@ library
 executable myproj-exe
   main-is: Main.hs
   other-modules:
+      Eight
       Five
       Four
+      Nine
       One
       Seven
       Six
+      Ten
       Three
       Two
       Paths_myproj
